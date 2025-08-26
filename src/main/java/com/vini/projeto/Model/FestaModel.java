@@ -3,8 +3,6 @@ package com.vini.projeto.Model;
 
 import jakarta.persistence.*;
 
-import java.io.Serializable;
-
 @Entity(name = "FESTA")
 @Table (name = "TB_FESTA")
 public class FestaModel {
@@ -19,6 +17,27 @@ public class FestaModel {
     public FestaModel(){
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
 
+    public void setNome(String nome){
+        this.nome = nome;
+    }
 
+    public void setCPF(String CPF){
+        this.CPF = CPF;
+    }
+
+    public Long getId(){
+        return id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCPF(){
+        return CPF;
+    }
 }
